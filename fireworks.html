@@ -1,0 +1,2073 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fireworks - Hanabi Crackers</title>
+    <link rel="shortcut icon" href="Images/hanabi-logo.png" type="image/x-icon">
+    <meta name="keywords" content="1000 wala, kids crackers, bombs, rocket, low cost crackers, tamilnadu">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg p-lg-0 sticky-top">
+        <div class="container-fluid">
+            <img src="Images/hanabi-logo.png" class="logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="about-us.html">About-Us</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" href="fireworks.html">Fireworks</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="contact-us.html">Contact-Us</a>
+                    </li>
+                </ul>
+                <!-- <span class="d-flex mx-2"><a class="text-decoration-none text-black" href="#">Login /
+                        Register</a></span> -->
+            </div>
+        </div>
+    </nav>
+    <!-- End of Navigation Bar -->
+
+    <!-- <a href="https://api.whatsapp.com/send?phone=8680830120&text=Hello%21%20I%20have%20a%20question."
+        target="_blank"><img src="Images/whatsapp-icon.png" id="whatsappButton" alt=""
+            style="width: 60px; height: 60px; left: 10px" class="position-fixed top-50"></a> -->
+
+    <div class="cart-icon">
+        <div class="position-relative">
+            <a href="add-to-card.html" class="text-decoration-none text-black">
+                <svg class="" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
+                    class="bi bi-cart-check" viewBox="0 0 16 16">
+                    <path
+                        d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                    <path
+                        d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                </svg>
+            </a>
+        </div>
+        <span class="cart-number" id="countItem">0</span>
+    </div>
+
+    <!-- Start of Crackers Section -->
+
+
+    <!-- End of Crackers Section -->
+    <div class="my-4">
+        <h1 class="text-center">Fireworks</h1>
+        <button id="filterButton" class="filter-button"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                fill="currentColor" class="bi bi-funnel me-2" viewBox="0 0 16 16">
+                <path
+                    d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z" />
+            </svg>Filter</button>
+        <div class="firework-container">
+            <div class="side-bar px-3" id="sideNav">
+                <button id="closeButton" class="p-2 close-button">&times;</button>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="sparklers" data-filter="sparklers">
+                    <label class="form-check-label" for="sparklers">
+                        Sparklers
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flowerpot" data-filter="flower-pots">
+                    <label class="form-check-label" for="flowerpot">
+                        Flower Pots
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="chakkars" data-filter="chakkar">
+                    <label class="form-check-label" for="chakkars">
+                        Ground Chakkars
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="bomb-varieties" data-filter="bomb">
+                    <label class="form-check-label" for="bomb-varieties">
+                        Bomb Varieties
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="sound-flash"
+                        data-filter="sound-crackers">
+                    <label class="form-check-label" for="sound-flash">
+                        Sound Flash
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="kids-item" data-filter="kids">
+                    <label class="form-check-label" for="kids-item">
+                        Kids Items
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="twinkling" data-filter="twinkling">
+                    <label class="form-check-label" for="twinkling">
+                        Twinkling Star
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="festival" data-filter="festival">
+                    <label class="form-check-label" for="festival">
+                        Festival Crackers
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="chorsa-deluxe" data-filter="deluxe">
+                    <label class="form-check-label" for="chorsa-deluxe">
+                        Chorsa & Deluxe
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="loose-crackers" data-filter="loose">
+                    <label class="form-check-label" for="loose-crackers">
+                        Loose Crackers
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="matches" data-filter="matches">
+                    <label class="form-check-label" for="matches">
+                        Matches
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="special" data-filter="special">
+                    <label class="form-check-label" for="special">
+                        Special Fountains
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="elite" data-filter="elite">
+                    <label class="form-check-label" for="elite">
+                        Elite Fountain
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="musical" data-filter="musical">
+                    <label class="form-check-label" for="musical">
+                        Musical Fountain
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="rockets" data-filter="rockets">
+                    <label class="form-check-label" for="rockets">
+                        Rockets
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="sky-fancies" data-filter="sky">
+                    <label class="form-check-label" for="sky-fancies">
+                        Sky Fancies
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="fancy-comets" data-filter="fancy">
+                    <label class="form-check-label" for="fancy-comets">
+                        Fancy Comets
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="multicolour" data-filter="multicolour">
+                    <label class="form-check-label" for="multicolour">
+                        Multicolour Shots
+                    </label>
+                </div>
+            </div>
+            <div class="product-table py-3">
+
+                <!-- Bombs -->
+                <div class="products-card bomb">
+                    <img src="Crackers/Hydro Bomb.svg" alt="" class="products-img">
+                    <h3>Hydro Bomb</h3>
+                    <p>₹73 &nbsp;<span class="text-decoration-line-through">₹146</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2 text-white"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+                <div class="products-card bomb">
+                    <img src="Crackers/Classic Bomb.svg" alt="" class="products-img">
+                    <h3>Classic Bomb</h3>
+                    <p>₹129 &nbsp;<span class="text-decoration-line-through">₹258</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+                <div class="products-card bomb">
+                    <img src="Crackers/Digital Bomb.svg" alt="" class="products-img">
+                    <h3>Digital Bomb</h3>
+                    <p>₹243 &nbsp;<span class="text-decoration-line-through">₹486</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+                <div class="products-card bomb">
+                    <img src="Crackers/Quarter_KG_Bomb.svg" alt="" class="products-img">
+                    <h3>Paper Bomb-1/4 KG</h3>
+                    <p>₹61&nbsp;<span class="text-decoration-line-through">₹122</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+                <div class="products-card bomb">
+                    <img src="Crackers/Half KG Bomb.svg" alt="" class="products-img">
+                    <h3>Paper Bomb-1/2 KG</h3>
+                    <p>₹122 &nbsp;<span class="text-decoration-line-through">₹244</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+                <div class="products-card bomb">
+                    <img src="Crackers/1 kg Bomb.svg" alt="" class="products-img">
+                    <h3>Paper Bomb - 1KG</h3>
+                    <p>₹243 &nbsp;<span class="text-decoration-line-through">₹486</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <!-- Sound Crackers -->
+                <div class="products-card sound-crackers">
+                    <img src="Crackers/Kuruvi.svg" alt="" class="products-img">
+                    <h3>2 3/4" Kuruvi</h3>
+                    <p>₹11 &nbsp;<span class="text-decoration-line-through">₹22</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card sound-crackers">
+                    <img src="Crackers/3.5___Lakshmi-removebg-preview.svg" alt="" class="products-img">
+                    <h3>3.5" Lakshmi</h3>
+                    <p>₹15 &nbsp;<span class="text-decoration-line-through">₹30</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card sound-crackers">
+                    <img src="Crackers/4 inch Hulk.svg" alt="" class="products-img">
+                    <h3>4" Lakshmi(HULK)</h3>
+                    <p>₹22 &nbsp;<span class="text-decoration-line-through">₹44</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card sound-crackers">
+                    <img src="Crackers/4 inch deluxe.svg" alt="" class="products-img">
+                    <h3>4" Deluxe Lion</h3>
+                    <p>₹32 &nbsp;<span class="text-decoration-line-through">₹64</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card sound-crackers">
+                    <img src="Crackers/4 inch gold laxmi.svg" alt="" class="products-img">
+                    <h3>4" Gold Lakshmi</h3>
+                    <p>₹37 &nbsp;<span class="text-decoration-line-through">₹74</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card sound-crackers">
+                    <img src="Crackers/2 sound cracker.svg" alt="" class="products-img">
+                    <h3>Two Sound</h3>
+                    <p>₹41 &nbsp;<span class="text-decoration-line-through">₹82</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card sound-crackers">
+                    <img src="Crackers/5 inch lion.svg" alt="" class="products-img">
+                    <h3>5" Mega Lion</h3>
+                    <p>₹38 &nbsp;<span class="text-decoration-line-through">₹76</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <!-- Bijili -->
+                <div class="products-card loose">
+                    <img src="Crackers/Bijili.svg" alt="" class="products-img">
+                    <h3>Red Bijili (50 PCs)</h3>
+                    <p>₹18 &nbsp;<span class="text-decoration-line-through">₹36</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card loose">
+                    <img src="Crackers/Bijili.svg" alt="" class="products-img">
+                    <h3>Red Bijili (100 PCs)</h3>
+                    <p>₹34 &nbsp;<span class="text-decoration-line-through">₹68</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card loose">
+                    <img src="Crackers/Hulk_bijili-removebg-preview.svg" alt="" class="products-img">
+                    <h3>Stripped Bijili</h3>
+                    <p>₹34 &nbsp;<span class="text-decoration-line-through">₹68</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <!-- Chorsa & Deluxe -->
+                <div class="products-card deluxe">
+                    <img src="Crackers/28_chorsa-removebg-preview.svg" alt="" class="products-img">
+                    <h3>28 Chorsa</h3>
+                    <p>₹18 &nbsp;<span class="text-decoration-line-through">₹36</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card deluxe">
+                    <img src="Crackers/56_giant-removebg-preview.svg" alt="" class="products-img">
+                    <h3>56 Gaint</h3>
+                    <p>₹61 &nbsp;<span class="text-decoration-line-through">₹122</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card deluxe">
+                    <img src="Crackers/24.svg" alt="" class="products-img">
+                    <h3>24 Deluxe</h3>
+                    <p>₹59 &nbsp;<span class="text-decoration-line-through">₹118</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card deluxe">
+                    <img src="Crackers/50 deluxe.jpeg" alt="" class="products-img">
+                    <h3>50 Deluxe</h3>
+                    <p>₹122 &nbsp;<span class="text-decoration-line-through">₹244</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card deluxe">
+                    <img src="Crackers/100.svg" alt="" class="products-img">
+                    <h3>100 Deluxe</h3>
+                    <p>₹264 &nbsp;<span class="text-decoration-line-through">₹528</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <!-- Wala -->
+                <div class="products-card festival">
+                    <img src="Crackers/100_wala-removebg-preview.svg" alt="" class="products-img">
+                    <h3>100 Wala</h3>
+                    <p>₹38 &nbsp;<span class="text-decoration-line-through">₹76</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card festival">
+                    <img src="Crackers/200_wala-removebg-preview.svg" alt="" class="products-img">
+                    <h3>200 Wala</h3>
+                    <p>₹76 &nbsp;<span class="text-decoration-line-through">₹152</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card festival">
+                    <img src="Crackers/300_wala-removebg-preview.svg" alt="" class="products-img">
+                    <h3>300 Wala</h3>
+                    <p>₹122 &nbsp;<span class="text-decoration-line-through">₹244</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card festival">
+                    <img src="Crackers/1000_wala-removebg-preview.svg" alt="" class="products-img">
+                    <h3>1000 Wala</h3>
+                    <p>₹365 &nbsp;<span class="text-decoration-line-through">₹730</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card festival">
+                    <img src="Crackers/2000_wala-removebg-preview.svg" alt="" class="products-img">
+                    <h3>2000 Wala</h3>
+                    <p>₹729 &nbsp;<span class="text-decoration-line-through">₹1458</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card festival">
+                    <img src="Crackers/5000_wala-removebg-preview.svg" alt="" class="products-img">
+                    <h3>5000 Wala</h3>
+                    <p>₹1823 &nbsp;<span class="text-decoration-line-through">₹3646</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card festival">
+                    <img src="Crackers/10000_wala-removebg-preview.svg" alt="" class="products-img">
+                    <h3>10000 Wala</h3>
+                    <p>₹3645 &nbsp;<span class="text-decoration-line-through">₹7290</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <!-- Sparklers -->
+                <div class="products-card sparklers">
+                    <img src="Crackers/7 cm electric sparklers.svg" alt="" class="products-img">
+                    <h3>7cm Electric Sparklers</h3>
+                    <p>₹12 &nbsp;<span class="text-decoration-line-through">₹24</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card sparklers">
+                    <img src="Crackers/7 cm cracking sparklers.svg" alt="" class="products-img">
+                    <h3>7cm Crackling Sparklers</h3>
+                    <p>₹14 &nbsp;<span class="text-decoration-line-through">₹28</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card sparklers">
+                    <img src="Crackers/7 cm green sparklers.svg" alt="" class="products-img">
+                    <h3>7cm Green Sparklers</h3>
+                    <p>₹17 &nbsp;<span class="text-decoration-line-through">₹34</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card sparklers">
+                    <img src="Crackers/7 cm red sparklers.svg" alt="" class="products-img">
+                    <h3>7cm Red Sparklers</h3>
+                    <p>₹22 &nbsp;<span class="text-decoration-line-through">₹44</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card sparklers">
+                    <img src="Crackers/10 cm electric sparklers.svg" alt="" class="products-img">
+                    <h3>10cm Electric Sparklers</h3>
+                    <p>₹22 &nbsp;<span class="text-decoration-line-through">₹44</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card sparklers">
+                    <img src="Crackers/10 cm cracking sparklers.svg" alt="" class="products-img">
+                    <h3>10cm Crackling Sparklers</h3>
+                    <p>₹25 &nbsp;<span class="text-decoration-line-through">₹50</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card sparklers">
+                    <img src="Crackers/10 cm green sparklers.svg" alt="" class="products-img">
+                    <h3>10cm Green Sparklers</h3>
+                    <p>₹26 &nbsp;<span class="text-decoration-line-through">₹52</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card sparklers">
+                    <img src="Crackers/10 Cm red sparklers.svg" alt="" class="products-img">
+                    <h3>10cm Red Sparklers</h3>
+                    <p>₹30 &nbsp;<span class="text-decoration-line-through">₹60</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card sparklers">
+                    <img src="Crackers/15 cm electric sparklers.svg" alt="" class="products-img">
+                    <h3>15cm Electric Sparklers</h3>
+                    <p>₹48 &nbsp;<span class="text-decoration-line-through">₹96</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card sparklers">
+                    <img src="Crackers/15 cm crackling sparklers.svg" alt="" class="products-img">
+                    <h3>15cm Crackling Sparklers</h3>
+                    <p>₹52 &nbsp;<span class="text-decoration-line-through">₹104</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card sparklers">
+                    <img src="Crackers/15 cm Green sparklers.svg" alt="" class="products-img">
+                    <h3>15cm Green Sparklers</h3>
+                    <p>₹57 &nbsp;<span class="text-decoration-line-through">₹114</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card sparklers">
+                    <img src="Crackers/15 cm red sparklers.svg" alt="" class="products-img">
+                    <h3>15cm Red Sparklers</h3>
+                    <p>₹65 &nbsp;<span class="text-decoration-line-through">₹130</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card sparklers">
+                    <img src="Crackers/30 cm electric sparklers.svg" alt="" class="products-img">
+                    <h3>30cm Electric Sparklers</h3>
+                    <p>₹48 &nbsp;<span class="text-decoration-line-through">₹96</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card sparklers">
+                    <img src="Crackers/30 cm crackling sparklers.svg" alt="" class="products-img">
+                    <h3>30cm Crackling Sparklers(5 Pcs)</h3>
+                    <p>₹52 &nbsp;<span class="text-decoration-line-through">₹104</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card sparklers">
+                    <img src="Crackers/30 cm Green sparklers.svg" alt="" class="products-img">
+                    <h3>30cm Green Sparklers</h3>
+                    <p>₹57 &nbsp;<span class="text-decoration-line-through">₹114</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card sparklers">
+                    <img src="Crackers/30 cm red sparklers.svg" alt="" class="products-img">
+                    <h3>30cm Red Sparklers</h3>
+                    <p>₹65 &nbsp;<span class="text-decoration-line-through">₹130</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card sparklers">
+                    <img src="Crackers/50 cm Electric sparklers.svg" alt="" class="products-img">
+                    <h3>50cm Electric Sparklers</h3>
+                    <p>₹189 &nbsp;<span class="text-decoration-line-through">₹378</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+                
+                <div class="products-card sparklers">
+                    <img src="Crackers/50 cm Cracking sparklers.svg" alt="" class="products-img">
+                    <h3>50cm Crackling Sparklers(5 Pcs)</h3>
+                    <p>₹216 &nbsp;<span class="text-decoration-line-through">₹432</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card sparklers">
+                    <img src="Crackers/50 cm Supermix sparklers.svg" alt="" class="products-img">
+                    <h3>50cm Supermix Colour <br>(5 in 1)</h3>
+                    <p>₹243 &nbsp;<span class="text-decoration-line-through">₹486</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <!-- Flower Pots -->
+                <div class="products-card flower-pots">
+                    <img src="Crackers/Flowerpot big.svg" alt="" class="products-img">
+                    <h3>Flowerpots Big</h3>
+                    <p>₹76 &nbsp;<span class="text-decoration-line-through">₹152</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card flower-pots">
+                    <img src="Crackers/Flowerpot spl.svg" alt="" class="products-img">
+                    <h3>Flowerpots Special</h3>
+                    <p>₹95 &nbsp;<span class="text-decoration-line-through">₹190</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <!-- <div class="products-card flower-pots">
+                    <img src="Crackers/Flowerpot Asoka.svg" alt="" class="products-img">
+                    <h3>Flowerpots Asoka</h3>
+                    <p>₹230 &nbsp;<span class="text-decoration-line-through">₹460</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card flower-pots">
+                    <img src="Crackers/Crackersonline.in-26.webp" alt="" class="products-img">
+                    <h3>Flowerpot Deluxes(5 pcs)</h3>
+                    <p>₹50 &nbsp;<span class="text-decoration-line-through">₹100</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div> -->
+
+                <div class="products-card flower-pots">
+                    <img src="Crackers/Colorkoti.svg" alt="" class="products-img">
+                    <h3>Flowerpot Colourkoti</h3>
+                    <p>₹230 &nbsp;<span class="text-decoration-line-through">₹460</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <!-- Ground Chakkars -->
+                <div class="products-card chakkar">
+                    <img src="Crackers/Ground chakkar big.svg" alt="" class="products-img">
+                    <h3>Ground Chakkar Big</h3>
+                    <p>₹44 &nbsp;<span class="text-decoration-line-through">₹88</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card chakkar">
+                    <img src="Crackers/Ground chakkar spl.svg" alt="" class="products-img">
+                    <h3>Ground Chakkar Special</h3>
+                    <p>₹81 &nbsp;<span class="text-decoration-line-through">₹162</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card chakkar">
+                    <img src="Crackers/Ground chakkar deluxe.svg" alt="" class="products-img">
+                    <h3>Ground Chakkar Deluxe</h3>
+                    <p>₹162 &nbsp;<span class="text-decoration-line-through">₹324</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card chakkar">
+                    <img src="Crackers/4^4 wheel.svg" alt="" class="products-img">
+                    <h3>4*4 Wheel</h3>
+                    <p>₹210 &nbsp;<span class="text-decoration-line-through">₹420</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card chakkar">
+                    <img src="Crackers/Dancing splinner.svg" alt="" class="products-img">
+                    <h3>Dancing Spinner</h3>
+                    <p>₹243 &nbsp;<span class="text-decoration-line-through">₹486</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card chakkar">
+                    <img src="Crackers/Wire Chakkar.svg" alt="" class="products-img">
+                    <h3>Wire Chakkar</h3>
+                    <p>₹250 &nbsp;<span class="text-decoration-line-through">₹500</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card chakkar">
+                    <img src="Crackers/Spinner.svg" alt="" class="products-img">
+                    <h3>Spinner Special</h3>
+                    <p>₹264 &nbsp;<span class="text-decoration-line-through">₹528</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <!-- Special Fountains -->
+                <div class="products-card special">
+                    <img src="Crackers/Pogo 5 colour mini fountain.svg" alt="" class="products-img">
+                    <h3>Pogo Mini Colour 5 <br>Colour Fountains</h3>
+                    <p>₹183 &nbsp;<span class="text-decoration-line-through">₹366</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card special">
+                    <img src="Crackers/Sunfeast 2 feet inch fountain.svg" alt="" class="products-img">
+                    <h3>Sunfeast 2" Fountain(5Pcs)</h3>
+                    <p>₹195 &nbsp;<span class="text-decoration-line-through">₹390</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card special">
+                    <img src="Crackers/Red sun 3'' fountain.svg" alt="" class="products-img">
+                    <h3>Red Sun 3" Fountain <br>(5 Pcs)</h3>
+                    <p>₹219 &nbsp;<span class="text-decoration-line-through">₹438</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card special">
+                    <img src="Crackers/Angry Bird Fountain.svg" alt="" class="products-img">
+                    <h3>Angry Bird 4" Fountain <br>(5 Pcs)</h3>
+                    <p>₹304 &nbsp;<span class="text-decoration-line-through">₹608</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card special">
+                    <img src="Crackers/Mini Tricolour Fountain.svg" alt="" class="products-img">
+                    <h3>Mini Tricolour Fountains(5 Pcs)</h3>
+                    <p>₹243 &nbsp;<span class="text-decoration-line-through">₹486</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card special">
+                    <img src="Crackers/Tricolour Fountain.svg" alt="" class="products-img">
+                    <h3>Tricolour Fountain <br>(5 Pcs)</h3>
+                    <p>₹338 &nbsp;<span class="text-decoration-line-through">₹676</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card special">
+                    <img src="Crackers/chinchan_glitter-removebg-preview.svg" alt="" class="products-img">
+                    <h3>Chinchan Glitter Fountain(5 Pcs)</h3>
+                    <p>₹156 &nbsp;<span class="text-decoration-line-through">₹312</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <!-- Elite Fountain -->
+                <div class="products-card elite">
+                    <img src="Crackers/Crood's Fountain.svg" alt="" class="products-img">
+                    <h3>Croods 2 in 1 Fountain</h3>
+                    <p>₹216 &nbsp;<span class="text-decoration-line-through">₹432</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card elite">
+                    <img src="Crackers/peacock fountain 3 face.svg" alt="" class="products-img">
+                    <h3>Peacock (3 Face)</h3>
+                    <p>₹203 &nbsp;<span class="text-decoration-line-through">₹406</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card elite">
+                    <img src="Crackers/peacock_fountain_3_face-removebg-preview.svg" alt="" class="products-img">
+                    <h3>Peacock (5 Face)</h3>
+                    <p>₹189 &nbsp;<span class="text-decoration-line-through">₹378</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card elite">
+                    <img src="Crackers/5G fountain.svg" alt="" class="products-img">
+                    <h3>5G Fountain</h3>
+                    <p>₹169 &nbsp;<span class="text-decoration-line-through">₹338</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card elite">
+                    <img src="Crackers/Tin fountain.svg" alt="" class="products-img">
+                    <h3>Tin Fountain</h3>
+                    <p>₹189 &nbsp;<span class="text-decoration-line-through">₹378</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card elite">
+                    <img src="Crackers/Magic show.svg" alt="" class="products-img">
+                    <h3>Money Magic Show <br>(2 Pcs)</h3>
+                    <p>₹304 &nbsp;<span class="text-decoration-line-through">₹608</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card elite">
+                    <img src="Crackers/Water Queen.svg" alt="" class="products-img">
+                    <h3>Water Shower</h3>
+                    <p>₹183 &nbsp;<span class="text-decoration-line-through">₹366</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <!-- Musical Fountain -->
+                <div class="products-card musical">
+                    <img src="Crackers/Siren.svg" alt="" class="products-img">
+                    <h3>Siren (3 Pcs)</h3>
+                    <p>₹189 &nbsp;<span class="text-decoration-line-through">₹378</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card musical">
+                    <img src="Crackers/Dora musicaal fountain.svg" alt="" class="products-img">
+                    <h3>Dora (5 Pcs)</h3>
+                    <p>₹183 &nbsp;<span class="text-decoration-line-through">₹366</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <!-- Rocket -->
+                <!-- <div class="products-card rockets">
+                    <img src="Crackers/Crackersonline.in-26.webp" alt="" class="products-img">
+                    <h3>Rocket Bomb</h3>
+                    <p>₹50 &nbsp;<span class="text-decoration-line-through">₹100</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card rockets">
+                    <img src="Crackers/Crackersonline.in-26.webp" alt="" class="products-img">
+                    <h3>Lunik Rocket</h3>
+                    <p>₹50 &nbsp;<span class="text-decoration-line-through">₹100</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div> -->
+
+                <div class="products-card rockets">
+                    <img src="Crackers/Musical Rocket.svg" alt="" class="products-img">
+                    <h3>Musical Rocket</h3>
+                    <p>₹169 &nbsp;<span class="text-decoration-line-through">₹338</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <!-- <div class="products-card rockets">
+                    <img src="Crackers/2 sound cracker.svg" alt="" class="products-img">
+                    <h3>2 Sound Rocket</h3>
+                    <p>₹50 &nbsp;<span class="text-decoration-line-through">₹100</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div> -->
+
+                <!-- Sky Crackers -->
+                <div class="products-card sky">
+                    <img src="Crackers/Helicopter.svg" alt="" class="products-img">
+                    <h3>Helicopter (5 Pcs)</h3>
+                    <p>₹108 &nbsp;<span class="text-decoration-line-through">₹216</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card sky">
+                    <img src="Crackers/starworld.svg" alt="" class="products-img">
+                    <h3>Star World Sky Shots (5 Pcs)</h3>
+                    <p>₹210 &nbsp;<span class="text-decoration-line-through">₹420</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card sky">
+                    <img src="Crackers/Sky wala.svg" alt="" class="products-img">
+                    <h3>Sky Wala (5 Pcs)</h3>
+                    <p>₹146 &nbsp;<span class="text-decoration-line-through">₹292</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card sky">
+                    <img src="Crackers/Drone.svg" alt="" class="products-img">
+                    <h3>Drone (5 Pcs)</h3>
+                    <p>₹146 &nbsp;<span class="text-decoration-line-through">₹292</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card sky">
+                    <img src="Crackers/Dancing Butterfly.svg" alt="" class="products-img">
+                    <h3>Butterfly (10 Pcs)</h3>
+                    <p>₹95 &nbsp;<span class="text-decoration-line-through">₹190</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <!-- Fancy Crackers -->
+                <div class="products-card fancy">
+                    <img src="Crackers/Chotta Fancy.svg" alt="" class="products-img">
+                    <h3>Chotta Fancy</h3>
+                    <p>₹46 &nbsp;<span class="text-decoration-line-through">₹92</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card fancy">
+                    <img src="Crackers/2'' Fancy comet.svg" alt="" class="products-img">
+                    <h3>2" Fancy (3 Pcs)</h3>
+                    <p>₹358 &nbsp;<span class="text-decoration-line-through">₹716</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card fancy">
+                    <img src="Crackers/2.5 inch fancy comet.svg" alt="" class="products-img">
+                    <h3>2.5" Fancy Comet</h3>
+                    <p>₹176 &nbsp;<span class="text-decoration-line-through">₹352</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card fancy">
+                    <img src="Crackers/3.5 inch fancy comet red.svg" alt="" class="products-img">
+                    <h3>3.5" Fancy Comet</h3>
+                    <p>₹358 &nbsp;<span class="text-decoration-line-through">₹716</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card fancy">
+                    <img src="Crackers/3.5 inch fancy comet green.svg" alt="" class="products-img">
+                    <h3>3.5" Double Ball Fancy Comet</h3>
+                    <p>₹540 &nbsp;<span class="text-decoration-line-through">₹1080</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card fancy">
+                    <img src="Crackers/3.5 inch fancy comet gold.svg" alt="" class="products-img">
+                    <h3>3.5" 7 Shooters Fancy Comet</h3>
+                    <p>₹493 &nbsp;<span class="text-decoration-line-through">₹986</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card fancy">
+                    <img src="Crackers/4 inch Hulk.svg" alt="" class="products-img">
+                    <h3>4" Fancy Comet</h3>
+                    <p>₹446 &nbsp;<span class="text-decoration-line-through">₹892</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card fancy">
+                    <img src="Crackers/4'' Fancy comet triple ball.svg" alt="" class="products-img">
+                    <h3>4" Triple Ball Fancy Comet</h3>
+                    <p>₹669 &nbsp;<span class="text-decoration-line-through">₹1338</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card fancy">
+                    <img src="Crackers/4'' Fancy Comet.svg" alt="" class="products-img">
+                    <h3>4" Fancy Comet (2 Pcs)</h3>
+                    <p>₹777 &nbsp;<span class="text-decoration-line-through">₹1554</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <!-- Shots -->
+                <div class="products-card multicolour">
+                    <img src="Crackers/7 shot.svg" alt="" class="products-img">
+                    <h3>7 Shot MultiColour</h3>
+                    <p>₹146 &nbsp;<span class="text-decoration-line-through">₹292</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card multicolour">
+                    <img src="Crackers/12 shot.svg" alt="" class="products-img">
+                    <h3>12 Shot MultiColour</h3>
+                    <p>₹237 &nbsp;<span class="text-decoration-line-through">₹474</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card multicolour">
+                    <img src="Crackers/12 shot rider.svg" alt="" class="products-img">
+                    <h3>12 Shot Rider</h3>
+                    <p>₹122 &nbsp;<span class="text-decoration-line-through">₹244</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card multicolour">
+                    <img src="Crackers/25 shot rider.svg" alt="" class="products-img">
+                    <h3>25 Shot Rider</h3>
+                    <p>₹243 &nbsp;<span class="text-decoration-line-through">₹486</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card multicolour">
+                    <img src="Crackers/30 shot multicolor.svg" alt="" class="products-img">
+                    <h3>30 Shots MultiColour</h3>
+                    <p>₹500 &nbsp;<span class="text-decoration-line-through">₹1000</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card multicolour">
+                    <img src="Crackers/30 shot crackling.svg" alt="" class="products-img">
+                    <h3>30 Shots Crackling</h3>
+                    <p>₹601 &nbsp;<span class="text-decoration-line-through">₹1202</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <!-- <div class="products-card multicolour">
+                    <img src="Crackers/30 shot multicolour legend.svg" alt="" class="products-img">
+                    <h3>30 Shots Crackling</h3>
+                    <p>₹50 &nbsp;<span class="text-decoration-line-through">₹100</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div> -->
+
+                <div class="products-card multicolour">
+                    <img src="Crackers/60 shot.svg" alt="" class="products-img">
+                    <h3>60 Shots MultiColour</h3>
+                    <p>₹1080 &nbsp;<span class="text-decoration-line-through">₹2160</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card multicolour">
+                    <img src="Crackers/120 shots.svg" alt="" class="products-img">
+                    <h3>120 Shots MultiColour</h3>
+                    <p>₹2160 &nbsp;<span class="text-decoration-line-through">₹4320</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card multicolour">
+                    <img src="Crackers/240 Multicolour Shots.svg" alt="" class="products-img">
+                    <h3>240 Shots MultiColour</h3>
+                    <p>₹4320 &nbsp;<span class="text-decoration-line-through">₹8640</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <!-- Kids Item -->
+                <div class="products-card kids">
+                    <img src="Crackers/Chinchan citput.svg" alt="" class="products-img">
+                    <h3>Chinchan Citputs (5 Pcs)</h3>
+                    <p>₹95 &nbsp;<span class="text-decoration-line-through">₹190</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2">
+                        <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>
+                        Add to Cart</button>
+                </div>
+
+                <div class="products-card kids">
+                    <img src="Crackers/Kitkat.svg" alt="" class="products-img">
+                    <h3>Kit Kat</h3>
+                    <p>₹34 &nbsp;<span class="text-decoration-line-through">₹68</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <!-- <div class="products-card kids">
+                    <img src="Crackers/Crackersonline.in-26.webp" alt="" class="products-img">
+                    <h3>Black Servant Big</h3>
+                    <p>₹50 &nbsp;<span class="text-decoration-line-through">₹100</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div> -->
+
+                <div class="products-card kids">
+                    <img src="Crackers/Roll Cap.svg" alt="" class="products-img">
+                    <h3>Roll Cap</h3>
+                    <p>₹81 &nbsp;<span class="text-decoration-line-through">₹162</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card kids">
+                    <img src="Crackers/Ring cap gun.svg" alt="" class="products-img">
+                    <h3>Ring Cap</h3>
+                    <p>₹13 &nbsp;<span class="text-decoration-line-through">₹26</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <!-- <div class="products-card kids">
+                    <img src="Crackers/Ring cap gun.svg" alt="" class="products-img">
+                    <h3>Gun (Ring Cap)</h3>
+                    <p>₹50 &nbsp;<span class="text-decoration-line-through">₹100</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div> -->
+
+                <div class="products-card kids">
+                    <img src="Crackers/Pong pong.svg" alt="" class="products-img">
+                    <h3>Pop Pop</h3>
+                    <p>₹13 &nbsp;<span class="text-decoration-line-through">₹26</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <!-- Twinkling -->
+                <div class="products-card twinkling">
+                    <img src="Crackers/1.5___Twinkling_star-removebg-preview.svg" alt="" class="products-img">
+                    <h3>1.5" Twinkling Star</h3>
+                    <p>₹27 &nbsp;<span class="text-decoration-line-through">₹54</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card twinkling">
+                    <img src="Crackers/4___twinkling_star-removebg-preview.svg" alt="" class="products-img">
+                    <h3>4' Twinkling Star</h3>
+                    <p>₹79 &nbsp;<span class="text-decoration-line-through">₹158</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card twinkling">
+                    <img src="Crackers/Jelly bean.svg" alt="" class="products-img">
+                    <h3>Jelly Bean Candle (3 Pcs)</h3>
+                    <p>₹95 &nbsp;<span class="text-decoration-line-through">₹190</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card twinkling">
+                    <img src="Crackers/Top guns.svg" alt="" class="products-img">
+                    <h3>Top Gun (5 Pcs)</h3>
+                    <p>₹297 &nbsp;<span class="text-decoration-line-through">₹594</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card twinkling">
+                    <img src="Crackers/Rainbow candle.svg" alt="" class="products-img">
+                    <h3>Rainbow Smoke (3 Pcs)</h3>
+                    <p>₹216 &nbsp;<span class="text-decoration-line-through">₹432</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <!-- Matches -->
+                <div class="products-card matches">
+                    <img src="Crackers/Galaxy matches.svg" alt="" class="products-img">
+                    <h3>Galaxy Matches</h3>
+                    <p>₹50 &nbsp;<span class="text-decoration-line-through">₹100</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+
+                <div class="products-card matches">
+                    <img src="Crackers/5 men army matches.svg" alt="" class="products-img">
+                    <h3>5 Men Army Matches</h3>
+                    <p>₹79 &nbsp;<span class="text-decoration-line-through">₹158</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+                
+                <div class="products-card matches">
+                    <img src="Crackers/Dushera Matches.svg" alt="" class="products-img">
+                    <h3>Dhasara Matches</h3>
+                    <p>₹284 &nbsp;<span class="text-decoration-line-through">₹568</span></p>
+                    <button onclick="addCart()"
+                        class="add-to-cart-btn btn btn-success d-flex justify-content-center align-content-center gap-2"><svg
+                            class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Start of Footer -->
+
+    <div id="footer" class="py-2">
+        <div class="footer-flex d-flex align-content-center justify-content-center py-5 px-2 gap-5 text-white">
+            <div class="company-info w-100 text-center">
+                <img src="Images/hanabi-logo.png" class="company-logo">
+                <p>Experience fireworks as never before with Hanabi fireworks, where passion meets fireworks, lit by young minds.</p>
+            </div>
+            <div class="footer-navigation w-50">
+                <h4>Quick Links</h4>
+                <ul class="list-unstyled fw-light">
+                    <li class="my-1"><a class="text-decoration-none text-white" href="index.html">Home</a></li>
+                    <li class="my-1"><a class="text-decoration-none text-white" href="about-us.html">About-us</a></li>
+                    <li class="my-1"><a class="text-decoration-none text-white" href="fireworks.html">Fireworks</a></li>
+                    <li class="my-1"><a class="text-decoration-none text-white" href="contact-us.html">Contact-Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-info w-100 d-flex flex-column gap-3">
+                <div class="d-flex align-content-center justify-content-start gap-3"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-pin-map-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z" />
+                        <path fill-rule="evenodd"
+                            d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z" />
+                    </svg>
+                    <h6 class="lh-base">
+                        1/1064 C, Murugaiyapuram, <br>
+                        Viswanatham, Sivakasi<br>
+                        Tamil Nadu - 626189
+                    </h6>
+                </div>
+                <div class="d-flex align-content-center justify-content-start gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope-plus-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207L16 4.697Z"/>
+                        <path fill-rule="evenodd" d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 0-.5.5v1h-1a.5.5 0 0 0 0 1h1v1a.5.5 0 0 0 1 0v-1h1a.5.5 0 0 0 0-1h-1v-1a.5.5 0 0 0-.5-.5Z"/>
+                      </svg>
+                    <p>hanabicrackers@gmail.com</p>
+                </div>
+                <div class="d-flex align-content-center justify-content-start gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-telephone-outbound-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                    <h6>+91 98948 33882 <br>+91 63812 31579</h6>
+                </div>
+            </div>
+            <div class="w-75 footer-4">
+                <div class="d-flex align-content-center justify-content-center gap-3 mb-3">
+                <h5>Follow us on</h5>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                </svg>
+                </div>
+                <div class="bgg mt-3 text-start"><h5>Download Pricelist</h5><button class="btn btn-light"><a href="pricelist.pdf" class="text-decoration-none text-dark" download>Click Here</a></button></div>
+            </div>
+        </div>
+        <div class="copyright bg-black text-white">
+            <p class="text-center">Copyright © 2023 Hanabi Fireworks Industries Sivakasi</p>
+        </div>
+    </div>
+
+    <!-- End of Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+        </script>
+    <script>
+        window.addEventListener('load', function () {
+            const sidebar = document.querySelector('.side-bar');
+            const container = document.querySelector('.firework-container');
+
+            function adjustSidebarPosition() {
+                const containerBottom = container.offsetTop + container.offsetHeight;
+                if (window.pageYOffset + sidebar.offsetHeight > containerBottom) {
+                    sidebar.style.position = 'absolute';
+                    sidebar.style.top = `${containerBottom - sidebar.offsetHeight}px`;
+                } else {
+                    sidebar.style.position = 'fixed';
+                    sidebar.style.top = '155px';
+                }
+            }
+
+            adjustSidebarPosition();
+            window.addEventListener('scroll', adjustSidebarPosition);
+            window.addEventListener('resize', adjustSidebarPosition);
+        });
+    </script>
+
+    <script src="Js/add-to-cart.js"></script>
+    <script src="Js/filter.js"></script>
+    <script src="Js/script.js"></script>
+</body>
+
+</html>
